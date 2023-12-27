@@ -54,16 +54,10 @@ public class AuthService {
         UserDto userDto = new UserDto();
         userDto.setEmail(email);
 
-//        Map<String, String> headers = new HashMap<>();
-//        headers.put(HttpHeaders.SET_COOKIE, token);
-
         MultiValueMapAdapter<String, String> headers = new MultiValueMapAdapter<>(new HashMap<>());
         headers.add(HttpHeaders.SET_COOKIE, "auth-token:" + token);
 
-
-
         ResponseEntity<UserDto> response = new ResponseEntity<>(userDto, headers, HttpStatus.OK);
-//        response.getHeaders().add(HttpHeaders.SET_COOKIE, token);
 
         return response;
     }
