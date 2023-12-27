@@ -1,8 +1,8 @@
-package dev.deepak.userservicetestfinal.controllers;
+package com.tarun.usermicroservice.controllers;
 
-import dev.deepak.userservicetestfinal.dtos.SetUserRolesRequestDto;
-import dev.deepak.userservicetestfinal.dtos.UserDto;
-import dev.deepak.userservicetestfinal.services.UserService;
+import com.tarun.usermicroservice.dtos.SetUserRolesRequestDto;
+import com.tarun.usermicroservice.dtos.UserDto;
+import com.tarun.usermicroservice.services.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

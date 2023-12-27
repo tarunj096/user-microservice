@@ -1,4 +1,4 @@
-package dev.deepak.userservicetestfinal.models;
+package com.tarun.usermicroservice.models;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

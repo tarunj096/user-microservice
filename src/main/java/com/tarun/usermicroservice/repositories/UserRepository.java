@@ -1,6 +1,7 @@
-package dev.deepak.userservicetestfinal.repositories;
+package com.tarun.usermicroservice.repositories;
 
-import dev.deepak.userservicetestfinal.models.User;
+
+import com.tarun.usermicroservice.models.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

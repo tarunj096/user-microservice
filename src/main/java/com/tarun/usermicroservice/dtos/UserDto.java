@@ -1,7 +1,8 @@
-package dev.deepak.userservicetestfinal.dtos;
+package com.tarun.usermicroservice.dtos;
 
-import dev.deepak.userservicetestfinal.models.Role;
-import dev.deepak.userservicetestfinal.models.User;
+
+import com.tarun.usermicroservice.models.Role;
+import com.tarun.usermicroservice.models.User;
 import lombok.Getter;
 import lombok.Setter;
 

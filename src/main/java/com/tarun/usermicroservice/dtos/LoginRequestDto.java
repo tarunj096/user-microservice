@@ -1,4 +1,4 @@
-package dev.deepak.userservicetestfinal.dtos;
+package com.tarun.usermicroservice.dtos;
 
 import lombok.Getter;
 import lombok.Setter;

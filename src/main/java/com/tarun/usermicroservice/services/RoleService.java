@@ -1,7 +1,8 @@
-package dev.deepak.userservicetestfinal.services;
+package com.tarun.usermicroservice.services;
 
-import dev.deepak.userservicetestfinal.models.Role;
-import dev.deepak.userservicetestfinal.repositories.RoleRepository;
+
+import com.tarun.usermicroservice.models.Role;
+import com.tarun.usermicroservice.repositories.RoleRepository;
 import org.springframework.stereotype.Service;
 
 @Service

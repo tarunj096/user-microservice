@@ -1,11 +1,12 @@
-package dev.deepak.userservicetestfinal.services;
+package com.tarun.usermicroservice.services;
 
-import dev.deepak.userservicetestfinal.dtos.UserDto;
-import dev.deepak.userservicetestfinal.models.SessionStatus;
-import dev.deepak.userservicetestfinal.models.User;
-import dev.deepak.userservicetestfinal.models.Session;
-import dev.deepak.userservicetestfinal.repositories.SessionRepository;
-import dev.deepak.userservicetestfinal.repositories.UserRepository;
+
+import com.tarun.usermicroservice.dtos.UserDto;
+import com.tarun.usermicroservice.models.Session;
+import com.tarun.usermicroservice.models.SessionStatus;
+import com.tarun.usermicroservice.models.User;
+import com.tarun.usermicroservice.repositories.SessionRepository;
+import com.tarun.usermicroservice.repositories.UserRepository;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;

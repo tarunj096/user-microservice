@@ -1,10 +1,11 @@
-package dev.deepak.userservicetestfinal.services;
+package com.tarun.usermicroservice.services;
 
-import dev.deepak.userservicetestfinal.dtos.UserDto;
-import dev.deepak.userservicetestfinal.models.Role;
-import dev.deepak.userservicetestfinal.models.User;
-import dev.deepak.userservicetestfinal.repositories.RoleRepository;
-import dev.deepak.userservicetestfinal.repositories.UserRepository;
+
+import com.tarun.usermicroservice.dtos.UserDto;
+import com.tarun.usermicroservice.models.Role;
+import com.tarun.usermicroservice.models.User;
+import com.tarun.usermicroservice.repositories.RoleRepository;
+import com.tarun.usermicroservice.repositories.UserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

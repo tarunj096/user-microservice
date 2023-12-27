@@ -1,8 +1,9 @@
-package dev.deepak.userservicetestfinal.controllers;
+package com.tarun.usermicroservice.controllers;
 
-import dev.deepak.userservicetestfinal.dtos.*;
-import dev.deepak.userservicetestfinal.models.SessionStatus;
-import dev.deepak.userservicetestfinal.services.AuthService;
+
+import com.tarun.usermicroservice.dtos.*;
+import com.tarun.usermicroservice.models.SessionStatus;
+import com.tarun.usermicroservice.services.AuthService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
