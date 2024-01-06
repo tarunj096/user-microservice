@@ -2,11 +2,14 @@ package com.tarun.usermicroservice.services;
 
 
 import com.tarun.usermicroservice.dtos.UserDto;
+import com.tarun.usermicroservice.models.Role;
 import com.tarun.usermicroservice.models.Session;
 import com.tarun.usermicroservice.models.SessionStatus;
 import com.tarun.usermicroservice.models.User;
 import com.tarun.usermicroservice.repositories.SessionRepository;
 import com.tarun.usermicroservice.repositories.UserRepository;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.MacAlgorithm;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -117,6 +120,20 @@ public class AuthService {
         if (sessionOptional.isEmpty()) {
             return null;
         }
+
+        Session session = sessionOptional.get();
+        if(session.getSessionStatus().equals(SessionStatus.ACTIVE)){
+            return SessionStatus.ENDED;
+        }
+        Date currentTime = new Date();
+        if (session.getExpiringAt().before(currentTime)){
+            return SessionStatus.ENDED;
+        }
+
+        Jws<Claims> jwsclaims = Jwts.parser().build().parseSignedClaims(token);
+        String email = (String) jwsclaims.getPayload().get("email");
+        List<Role> jwsRoles = (List<Role>) jwsclaims.getPayload().get("roles");
+        Date createdAt = (Date) jwsclaims.getPayload().get("createdat");
 
         return SessionStatus.ACTIVE;
     }
